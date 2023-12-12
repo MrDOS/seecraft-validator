@@ -1,13 +1,13 @@
 package ca.seenet.seecraft.validator;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.IOException;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class MinecraftStreamReaderTest
 {
@@ -16,7 +16,7 @@ public class MinecraftStreamReaderTest
 
     private MinecraftStreamReader reader;
 
-    @Before
+    @BeforeEach
     public void before() throws IOException
     {
         this.out = new PipedOutputStream();
